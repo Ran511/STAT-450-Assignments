@@ -1,0 +1,26 @@
+---
+title: 'STAT 450: Assignment 1'
+author: 'RAN YANG (Student #22954144)'
+date: "17 January, 2018"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+#if you do not have the package, type install.packages("name_of_the_package")
+library(knitr)
+library(zoo)
+```
+
+**A couple of sentences about myself**  
+Hi I'm Ran, a 4-th year student studying Economics and Statistics. I'm working in a non-profit organization called Mount Pleasant Business Improvement Area, which helps property owners and business tenants in our area enhance their return on investment.  I love cooking and baking, kitchen is my happy place. I also work out three times a week if school is not too busy.  
+**Talk about your favorite equation and why**   
+My favorite equation is Pythagorean theorem: $a^2+b^2=c^2$. Because triangle is the most stable shape. For me, right triangle is the perfect balance.    
+**Describe your favorite data set and show the first five rows of it along with an appropriate plot showing the data**   
+ToothGrowth data set contains the result from an experiment studying the effect of vitamin C on tooth growth in 60 Guinea pigs. Each animal received one of three dose levels of vitamin C (0.5, 1, and 2 mg/day) by one of two delivery methods, (orange juice or ascorbic acid (a form of vitamin C and coded as VC).  
+```{r ToothGrowth}
+ToothGrowth[1:5,]
+plot(len~supp, data = ToothGrowth)
+```
